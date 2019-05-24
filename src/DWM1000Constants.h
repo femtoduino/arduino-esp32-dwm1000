@@ -1,0 +1,6 @@
+#ifndef _DWM1000CONSTANTS_H_
+#define _DWM1000CONSTANTS_H_
+
+#define NOTHING 0x00
+
+#endif

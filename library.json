@@ -1,0 +1,14 @@
+{
+  "name": "DWM1000",
+  "keywords": "wireless, communication",
+  "description": "Arduino ESP32 library for the DecaWave DWM1000 (SPI)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/femtoduino/arduino-esp32-dwm1000.git"
+  },
+  "version": "0.1",
+  "exclude": [
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}
