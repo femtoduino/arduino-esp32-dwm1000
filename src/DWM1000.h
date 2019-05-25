@@ -1,7 +1,8 @@
 #ifndef _DWM1000_H_
 #define _DWM1000_H_
 
-#include "./driver/communication/DecaWaveSPI.h"
+#include "DWM1000Constants.h"
+#include "driver/communication/DecaWaveSPI.h"
 
 class DWM1000Class {
 
