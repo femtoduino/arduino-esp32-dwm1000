@@ -2,16 +2,20 @@
 #define _DWM1000_H_
 
 #include "DWM1000Constants.h"
-#include "driver/communication/DecaWaveSPI.h"
+#include "driver/CommunicationAbstract.h"
+#include "driver/communication/SPICommunication.h"
 
 class DWM1000Class {
 
-    DecaWaveSPIClass _spi;
+    CommunicationAbstract * _comms;
 
 public:
-    DWM1000Class(DecaWaveSPIClass spi): 
-        _spi(spi)
-        {};
+    DWM1000Class(CommunicationAbstract * comms): 
+        _comms(comms)
+        {
+
+            // Initialize internal stuff
+        };
 
     void begin();
 

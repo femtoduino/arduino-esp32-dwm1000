@@ -1,5 +1,5 @@
-#ifndef _DECAWAVESPI_H_
-#define _DECAWAVESPI_H_
+#ifndef _DWM1000_SPI_COMMUNICATION_H_
+#define _DWM1000_SPI_COMMUNICATION_H_
 #include <Arduino.h>
 #include <SPI.h>
 
@@ -7,8 +7,17 @@
 #include <stdlib.h>
 
 #include "./DWM1000Constants.h"
+#include "../CommunicationAbstract.h"
 
-class DecaWaveSPIClass {
+/**
+ * Communication (SPI) class. Implements the CommunicationAbstract class.
+ * 
+ * @author Femtoduino <support@femtoduino.com>
+ * @since 0.0.0
+ * @license MIT License
+ * @copyright 2019 Femtoduino
+ */
+class SPICommunicationClass : public CommunicationAbstract {
 
     SPIClass * _spi;
     uint8_t _spi_bus;
@@ -19,7 +28,7 @@ class DecaWaveSPIClass {
     uint8_t _irq;
     uint8_t _reset;
 public:
-    DecaWaveSPIClass(
+    SPICommunicationClass(
         uint8_t spi_bus, 
         uint8_t sck, 
         uint8_t miso, 
@@ -55,5 +64,5 @@ public:
     void end();
 };
 
-extern DecaWaveSPIClass DecaWaveSPI;
+extern SPICommunicationClass SPICommunication;
 #endif

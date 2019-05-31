@@ -1,10 +1,10 @@
 {
-  "name": "DWM1000",
-  "keywords": "wireless, communication",
-  "description": "Arduino ESP32 library for the DecaWave DWM1000 (SPI)",
+  "name": "FEMTOBEACONLPS",
+  "keywords": "wireless, communication, esp32, femtobeacon",
+  "description": "Arduino ESP32 library for the FemtoBeacon ESP32 LPS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/femtoduino/arduino-esp32-dwm1000.git"
+    "url": "https://github.com/femtoduino/arduino-femtobeacon-esp32-lps.git"
   },
   "version": "0.1",
   "exclude": [

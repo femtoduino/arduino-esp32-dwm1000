@@ -1,5 +1,5 @@
-#ifndef _DWM1000CONSTANTS_H_
-#define _DWM1000CONSTANTS_H_
+#ifndef _DWM1000_CONSTANTS_H_
+#define _DWM1000_CONSTANTS_H_
 #include <Arduino.h>
 
 #define NOTHING 0x00

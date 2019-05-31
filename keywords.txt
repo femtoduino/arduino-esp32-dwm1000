@@ -1,5 +1,5 @@
 #######################################
-# Syntax Coloring Map For DWM1000
+# Syntax Coloring Map For FEMTOBEACONLPS
 #######################################
 
 #######################################
@@ -13,8 +13,8 @@ DWM1000  KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-#begin   KEYWORD2
-#end KEYWORD2
+begin   KEYWORD1
+end KEYWORD1
 #select  KEYWORD2
 #newConfiguration    KEYWORD2
 #commitConfiguration KEYWORD2

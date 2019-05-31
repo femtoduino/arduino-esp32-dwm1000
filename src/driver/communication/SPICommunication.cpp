@@ -1,11 +1,19 @@
-#include "DecaWaveSPI.h"
+#include "SPICommunication.h"
 
+/**
+ * Communication (SPI) class. Implements the CommunicationAbstract class.
+ * 
+ * @author Femtoduino <support@femtoduino.com>
+ * @since 0.0.0
+ * @license MIT License
+ * @copyright 2019 Femtoduino
+ */
 
-void DecaWaveSPIClass::begin() {
+void SPICommunicationClass::begin() {
     this->_spi->begin();
 }
 
-byte DecaWaveSPIClass::transfer(byte data, bool begin, bool end) {
+byte SPICommunicationClass::transfer(byte data, bool begin, bool end) {
 
     byte received;
 
@@ -23,7 +31,7 @@ byte DecaWaveSPIClass::transfer(byte data, bool begin, bool end) {
     return received;
 }
 
-void DecaWaveSPIClass::end() {
+void SPICommunicationClass::end() {
 
     this->_spi->end();
 }
